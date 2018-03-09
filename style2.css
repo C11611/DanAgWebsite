@@ -1,0 +1,276 @@
+/*设置公共部分 菜单*/
+
+* {
+	padding:0;
+	margin:0;
+}
+
+body{
+	font:12px Arial, Helvetica, sans-serif;
+	
+}
+
+.wrap{
+	width:960px;
+	margin:0 auto; /*使div居中显示*/
+	
+}
+.header-top{
+	background:white;
+	height: 28px;
+	line-height: 28px;
+	/*border: 1px solid #E1E9F0;*/
+	border-top: none;
+
+}
+.header-mid{
+	height: 110px;
+		
+}
+.header-mid img{
+	position: relative;
+	top: 5px;
+}
+
+.header-nav{
+	/*height: 60px;*/
+	/*background: red;*/
+}
+
+/* 设置一级菜单 */
+.menu>li{
+	list-style:none; /* 将默认的列表符号去掉 */
+    padding:0 ; /* 将默认的内边距去掉 */
+    margin:0; /* 将默认的外边距去掉 */
+    float:left; /* 往左浮动 */
+    line-height: 34px;/* 设置菜单高度 */
+}
+
+.menu>li>a{
+display:block; /* 将链接设为块级元素 */
+width:139px; /* 设置宽度 */
+height:30px; /* 设置高度 */
+padding:8px 50px; /* 设置内边距 */
+line-height:30px; /* 设置行高，将行高和高度设置同一个值，可以让单行文本垂直居中 */
+text-align:center; /* 居中对齐文字 */
+/*background:#F7F7FF; /* 设置背景色 */
+background:	#F0F8FF; /* 设置背景色 */
+color:black; /* 设置文字颜色 */
+text-decoration:none; /* 去掉下划线 */
+border-right:1px solid #E0E0E0; /* 在左侧加上分隔线 */
+
+}
+
+
+/*设置悬停效果*/
+.menu>li> a:hover {
+/*background:#146C9C; /* 变换背景色 */
+/*color:#fff; /* 变换文字颜色 */
+ color:#fff; /* 变换文字颜色 */
+ background:#FF0000; /* 变换背景色 */
+}
+
+/* 设置二级菜单 */
+
+/* 设置二级菜单绝对定位，并隐藏 */
+
+.menu2 {
+   position: absolute;
+        display: none;
+}
+
+/* 设置二级菜单的li的样式 */
+ .menu2 li {
+        float: none;
+        list-style:none; /* 将默认的列表符号去掉 */
+    }
+
+  /* 鼠标放在一级菜单上，显示二级菜单 */
+ .menu  li:hover ul {
+        display: block;
+    }
+
+
+.menu2>li>a{
+        display:block; /* 将链接设为块级元素 */
+        width:239px; /* 设置宽度 */
+		height:30px; /* 设置高度 */
+		line-height:30px; /* 设置行高，将行高和高度设置同一个值，可以让单行文本垂直居中 */
+		text-align:center; /* 居中对齐文字 */
+		background:#F7F7FF; /* 设置背景色 */
+		color:black; /* 设置文字颜色 */
+		text-decoration:none; /* 去掉下划线 */
+	/*	border-right:1px solid #E0E0E0; /* 在左侧加上分隔线 */ 
+    }
+
+   .menu2>li:first-child > a {
+        border-top: 0px solid #ccc;
+    }
+/*设置悬停效果*/
+.menu2>li> a:hover {
+/*background:#146C9C; /* 变换背景色 */
+color:#fff; /* 变换文字颜色 */
+background:#FF0000; /* 变换背景色 */
+}
+
+/*index页面content*/
+
+.container{
+	margin: 10px 0;
+}
+
+.content-top{
+	height: 300px;
+	/*background: yellow;*/
+	width: 960px;
+}
+
+.content-mid{
+	margin: 10px 0;
+	height: 400px;
+}
+
+.content-left{
+	width: 480px;
+	height: 400px;
+	/*background: red;*/
+	float: left; /* 两个div并排 */
+}
+
+
+.box-image{
+   position: relative;
+   margin: 0 90px; /* content图片居中显示 */
+}
+
+.box-text{
+	margin: 0 90px; /* content文本和上面图片对齐 */
+	background: #EDEDED;
+	height: 100px;
+}
+
+
+.content-img{
+	
+	height: 300px;
+	/*background: gray;*/
+
+}
+
+
+
+.content-right{
+	height: 400px;
+	width: 480px;
+	/*background:green;*/
+	float: right;/* 两个div并排 */
+}
+
+
+/*设置底部*/
+
+.footer{
+	 text-align: center;	 
+	 
+}
+.footer p{
+	 font-size: 16px;
+
+}
+
+.footer-bottom{
+	height: 24px;
+	width: 960px;
+	background: white;
+}
+
+
+
+/*设置aboutthecompany 中员工列表*/
+.content-staff{
+	height: 500px;
+}
+
+.all-staff{
+	margin: 10px 0;
+}
+
+.staff{
+	height: 200px;
+}
+.staff-image{
+	height: 150px;
+	width: 150px;
+	/*background:green;*/
+	float: left;/* 两个div并排 */
+}
+
+.staff-imgae2 {
+	  box-shadow: 2px 2px 8px grey;
+	  border: 1px solid #dddddd;
+	  padding: 4px;
+	  margin: 0 10px 10px;
+}
+
+.staff-text{
+    height: 150px;
+	width: 75%;	
+	background:red;
+	float: right;/* 两个div并排 */
+	margin: 0 10px 10px 20px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.floatClear {
+    clear: both;/* 使横线展示在下面 */
+}
+
+/* 设置横线样式使两个横线中间的内容展示在中间 */
+hr{
+	clear: both;
+	margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+    height: 0;
+    background-color: #ccc;
+}
+
+
+/*设置partner页面*/
+
+.partner-name{
+	float: right;
+	position: relative;
+	text-align: bottom;
+	vertical-align:text-bottom;
+	margin: 120px 10px 10px;
+}
+
+.partner-logo{
+
+	  padding: 4px;
+	  margin: 0 10px 10px;
+	  float: left;
+}
+
+.name-logo{
+	height: 200px;
+	background: red;
+}
+
+
+/*设置contact页面*/
+
+.contact-mid{
+	
+	background: green;
+	
+}
+
+.contact-text{
+   margin: 0px 0px 100px 200px;
+   font-size: 24px;
+}

@@ -1,0 +1,209 @@
+/*设置公共样式：*/
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.bodycontent{
+    width: 100 px;
+    margin: 0 auto;
+}
+
+
+/* 设置header */
+
+.header {    
+    height: 20 px;
+    width: 100 px;   
+
+}
+
+.logo {
+    background: blue;
+    height: 400 px;
+}
+
+
+
+    
+#menu { 
+font:12px verdana, arial, sans-serif; /* 设置文字大小和字体样式 */
+text-align: center;
+}
+
+#menu, #menu li {
+list-style:none; /* 将默认的列表符号去掉 */
+padding:0 ; /* 将默认的内边距去掉 */
+margin:0; /* 将默认的外边距去掉 */
+}
+
+/*让文字横排*/
+#menu li { 
+float:left; /* 往左浮动 */
+}
+
+/*设置链接样式：*/
+#menu  li a {
+display:block; /* 将链接设为块级元素 */
+padding:8px 50px; /* 设置内边距 */
+background:#3A4953; /* 设置背景色 */
+color:#fff; /* 设置文字颜色 */
+text-decoration:none; /* 去掉下划线 */
+border-right:1px solid #000; /* 在左侧加上分隔线 */
+}
+
+#menu .collapsed-in{
+    padding: 0;
+}
+
+#menu ul li a {
+display:block; /* 将链接设为块级元素 */
+width:100px; /* 设置宽度 */
+height:30px; /* 设置高度 */
+line-height:30px; /* 设置行高，将行高和高度设置同一个值，可以让单行文本垂直居中 */
+text-align:center; /* 居中对齐文字 */
+background:#3A4953; /* 设置背景色 */
+color:#fff; /* 设置文字颜色 */
+text-decoration:none; /* 去掉下划线 */
+border-right:1px solid #000; /* 在左侧加上分隔线 */
+}
+
+/*设置悬停效果*/
+#menu li a:hover {
+background:#146C9C; /* 变换背景色 */
+color:#fff; /* 变换文字颜色 */
+}
+
+
+/* 设置二级菜单绝对定位，并隐藏 */
+
+#menu>ul>li>ul{
+   position: absolute;
+        display: none;
+}
+
+/* 设置二级菜单的li的样式 */
+ #menu > ul > li > ul > li {
+        float: none;
+    }
+
+  /* 鼠标放在一级菜单上，显示二级菜单 */
+ #menu > ul > li:hover ul {
+        display: block;
+    }
+
+
+#menu> ul > li > ul > li > a {
+      display:block; /* 将链接设为块级元素 */
+    width:100px; /* 设置宽度 */
+height:30px; /* 设置高度 */
+line-height:30px; /* 设置行高，将行高和高度设置同一个值，可以让单行文本垂直居中 */
+text-align:center; /* 居中对齐文字 */
+background:#3A4953; /* 设置背景色 */
+color:#fff; /* 设置文字颜色 */
+text-decoration:none; /* 去掉下划线 */
+border-right:1px solid #000; /* 在左侧加上分隔线 */
+    }
+
+ #menu > ul > li > ul > li:first-child > a {
+        border-top: 0px solid #ccc;
+    }
+
+
+
+
+
+
+/* 设置首页图片文字*/
+
+.content-bottom{
+    display: block;
+
+}
+
+
+.content-bottom a {
+    color: blue;
+    text-decoration: none;
+
+}
+
+/* index 设置中间内容防止底部文字错位*/
+.content-bottom:after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+
+.wprestyle-column-box {
+    width: 24.9975%;
+    float: left;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 25px;
+    line-height: 30px;
+}
+
+.box-text {
+    min-height: 360px;
+}
+
+.wprestyle-column-box .box-text {
+    width: 300px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 8px;
+}
+
+.wprestyle-column-box .box-image img {
+    
+    margin-bottom: 0px;
+    vertical-align: middle;
+}
+
+.wprestyle-column-box .box-image p {
+    
+    margin-bottom: 0px;
+    vertical-align: middle;
+}
+
+
+
+
+#content {
+    width: 1000px;
+}
+
+.content-top{
+    width: 1000px;
+
+}
+
+/* 设置员地址*/
+
+
+
+
+
+
+/* 设置员工列表*/
+.about_image {
+    width: 20%;
+    padding-right: 5%;
+}
+
+.floatLeft {
+    float: left;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+
